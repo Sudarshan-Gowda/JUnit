@@ -27,7 +27,7 @@ This annotated methods also supports TestInfo as method parameters so we can use
 `@ParameterizedTest` <br>
 `@ValueSource(strings = {"",""})` <br>
 
-Example: <br>
+* Example for parameterized test: <br>
 `@ParameterizedTest(name = "{0} upper case is {1}")` <br>
 `@CsvSource(value = { "abcd, ABCD", "abc, ABC", "'',''", "abcdef,ABCDEF" })` <br>
 
