@@ -6,15 +6,22 @@
   	<img src="./docs/pic1.png"/>
  
 ## Basic Methods:
-  •	assertEquals(expected, actual); <br>
-	<img src="./docs/pic2.png"/>
-  •	assertTrue(trueCondition); <br>
-  •	assertFalse(falseCondition); <br>
- 	<img src="./docs/pic3.png"/>
+ <ul>
+	<li>`assertEquals(expected, actual);` <br>
+	<img src="./docs/pic2.png"/>	
+	</li>	
+	<li>
+	`assertTrue(trueCondition);` <br>
+	</li>
+	<li>
+	`assertFalse(falseCondition);` <br>
+	<img src="./docs/pic3.png"/>
+	</li>	
+ </ul>	
 
 ## @Before and @After Annotation
 <ul>
-	<li`>@Before` annotation is used to setup some conditions that will be executed before the every test method.</li>
+	<li>`@Before` annotation is used to setup some conditions that will be executed before the every test method.</li>
 	<li>`@After` annotation is used to setup some conditions that will be executed after the every test method.<br>
 	<img src="./docs/pic4.png"/> <br>
 	</li>
@@ -41,8 +48,8 @@
 	
 •	Parameterized test
 	<ol>
-		<li>Configure @RunWith(Parameterized.class) annotation</li>	
-		<li>Define static method with @Parameters annotations</li>	
+		<li>Configure `@RunWith(Parameterized.class)` annotation</li>	
+		<li>Define static method with `@Parameters` annotations</li>	
 		<li>Create constructors with parameters</li>	
 		<li>Pass the parameters as input for the functions.</li>	
 	</ol>
