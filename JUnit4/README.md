@@ -1,26 +1,25 @@
 # JUnit4:
 
 ## Basic Information:
-  •	@Test annotation should be placed on the top of the method to test the functions.
-  •	Any test method should be public and return type is void.
+  •	@Test annotation should be placed on the top of the method to test the functions. <br>
+  •	Any test method should be public and return type is void. <br>
  
 ## Basic Methods:
-  •	assertEquals(expected, actual);
+  •	assertEquals(expected, actual); <br>
 
-  •	assertTrue(trueCondition);
-  •	assertFalse(falseCondition);
+  •	assertTrue(trueCondition); <br>
+  •	assertFalse(falseCondition); <br>
  
 
 ## @Before and @After Annotation
-•	@Before annotation is used to setup some conditions that will be executed before the every test method.
-•	@After annotation is used to setup some conditions that will be executed after the every test method.
+•	@Before annotation is used to setup some conditions that will be executed before the every test method. <br>
+•	@After annotation is used to setup some conditions that will be executed after the every test method. <br>
  
-•	Demonstrations:
+•	Demonstrations: <br>
  
-  Result:
+  Result: <br>
        
-#### Observation: 
-method with @Before annotations will be executed before the for every test method and after method will be after the test method.
+<b> Observation: </b> method with @Before annotations will be executed before the for every test method and after method will be after the test method.
 
 ## Other methods
 •	assertArrayEquals(expected, actual)  <br>
