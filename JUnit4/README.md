@@ -1,46 +1,45 @@
-# JUnit5
-Introduction to JUnit5
+# JUnit4:
 
-### Details:
+## Basic Information:
+  •	@Test annotation should be placed on the top of the method to test the functions.
+  •	Any test method should be public and return type is void.
+ 
+## Basic Methods:
+  •	assertEquals(expected, actual);
 
-* <b>@Test</b> -- Annotation used to run the test cases.<br>
+  •	assertTrue(trueCondition);
+  •	assertFalse(falseCondition);
+ 
 
-* In case if we want to get the database connection we can initailze in common method wit beforeAll method which will be called only once at the time of loading the class.<br>
-`@BeforeAll` <br>
-`@AfterAll` <br>
+## @Before and @After Annotation
+•	@Before annotation is used to setup some conditions that will be executed before the every test method.
+•	@After annotation is used to setup some conditions that will be executed after the every test method.
+ 
+•	Demonstrations:
+ 
+  Result:
+       
+#### Observation: 
+method with @Before annotations will be executed before the for every test method and after method will be after the test method.
 
-* In case to load default data for each methods, Can be done in common methods with below annotations which will be called every time of method execution.
-`@BeforeEach`<br>
-`@AfterEach` <br>
-This annotated methods also supports TestInfo as method parameters so we can use it for display of method name etc.
+## Other methods
+•	assertArrayEquals(expected, actual)  <br>
+To compare the array elements we will use assertArrayEquals method.   <br>
+ 
+•	To handle the exception  <br>
 
-* Some of the methods used are:
-`assertEquals(expected, actual);` <br>
-`assertTrue(true);` <br>
-`assertFalse(false);` <br>
+•	To do performance test  <br>
+ 
+•	Parameterized test
+  o	Configure @RunWith(Parameterized.class) annotation <br>
+  o	Define static method with @Parameters annotations  <br>
+  o	Create constructors with parameters  <br>
+  o	Pass the parameters as input for the functions.  <br>
+ 
 
-* In JUnit5 method don't need to be public <br>
-
-* @DisplayName("Write the content/message here which is specific to function") <br>
-
-* To do parameterized test: <br>
-`@ParameterizedTest` <br>
-`@ValueSource(strings = {"",""})` <br>
-
-* Example for parameterized test: <br>
-`@ParameterizedTest(name = "{0} upper case is {1}")` <br>
-`@CsvSource(value = { "abcd, ABCD", "abc, ABC", "'',''", "abcdef,ABCDEF" })` <br>
-
-* To name the execution  function <br>
-`@ParameterizedTest(name = "{0} upper case is {1}")` <br>
-
-* For Repeated Execution: <br>
-`@Test` <br>
-`@RepeatedTest(10)` <br>
-
-* To test the performance of the application: <br>
-  `assertTimeout(Duration.ofSeconds(5), //code here);` <br>
-
-* To disable of skip the test class <br>
-`@Disabled`
-
+•	Organize into suites <br>
+  o	Create a class and configure  @RunWith(Suite.class) <br>
+  o	Use annotation @SuiteClasses and define the classes which need to be suites <br>
+  For ex:   ``@SuiteClasses({ QuickBeforeAfterTest.class, StringHelperTest.class })`` <br>
+	     
+	 
