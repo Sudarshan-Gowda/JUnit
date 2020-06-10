@@ -62,6 +62,6 @@
 	</ol>
 	  For ex:   `@SuiteClasses({ QuickBeforeAfterTest.class, StringHelperTest.class })` <br>
 		<img src="./docs/pic11.png"/>
-		<img src="./docs/pic12	.png"/>
+		<img src="./docs/pic12.png"/>
 	     
 	 
